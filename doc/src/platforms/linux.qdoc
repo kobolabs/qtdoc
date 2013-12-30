@@ -44,6 +44,9 @@
     components you want to install and follow the instructions of the
     installation program to complete the installation.
 
+    \note Qt Enterprise packages are available from the \l{Try Qt Enterprise}
+    page.
+
     The \l{Qt Installation Program} page contains the full installation
     procedure and the available installers for Linux distributions.
 
@@ -289,7 +292,7 @@
     \section1 OpenGL Dependencies
 
     The configure script will autodetect if OpenGL headers and libraries are
-    installed on your system, and if so, it will include the QtOpenGL module
+    installed on your system, and if so, it will include the \l{Qt OpenGL} module
     in the Qt library.
 
     If your OpenGL headers or libraries are placed in a non-standard directory,
@@ -302,7 +305,7 @@
 
     \section1 Multimedia Dependencies
 
-    As described in the \l{Multimedia Overview}, Qt Multimedia uses the GStreamer multimedia
+    As described in the \l Multimedia overview, Qt Multimedia uses the GStreamer multimedia
     framework as the backend for audio and video playback on Linux. The minimum required
     version of GStreamer is 0.10.
 
@@ -311,9 +314,9 @@
     distributions; try searching for \c gstreamer or \c libgstreamer in your
     distribution's package repository to find suitable packages.
 
-    \section1 QtWebKit Dependencies
+    \section1 Qt WebKit Dependencies
 
-    QtWebKit depends on some extra development tools in addition to those required for the rest of Qt.
+    \l{Qt WebKit} depends on some extra development tools in addition to those required for the rest of Qt.
 
     \note These dependencies are only needed if you use a source version of Qt.
           They are not required when using a prebuilt library.
@@ -330,7 +333,7 @@
 
     These should be available in most major Linux distributions, but the exact install instructions will vary.
 
-    For the most up to date information about QtWebKit dependencies, please refer to the \l{http://trac.webkit.org/wiki/BuildingQtOnLinux}{QtWebKit wiki for Linux}
+    For the most up to date information about \l{Qt WebKit} dependencies, please refer to the \l{http://trac.webkit.org/wiki/BuildingQtOnLinux}{Qt WebKit wiki for Linux}
 
 */
 
@@ -522,8 +525,7 @@
 
     We assume that you already have installed Qt as a shared library,
     which is the default when installing Qt, in the \c /path/to/Qt
-    directory. For more information on how to build Qt, see the \l
-    {Installation} documentation.
+    directory.
 
     \section2 Linking the Application to Qt as a Shared Library
 
@@ -555,10 +557,10 @@
 
     To deploy the application, we must make sure that we copy the
     relevant Qt libraries (corresponding to the Qt modules used in the
-    application) as well as the executable to the same
-    directory. Remember that if your application depends on compiler
-    specific libraries, these must also be redistributed along with
-    your application. For more information, see the \l {Application
+    application), the \l {Qt Plugins}{platform plugin}, and the executable
+    to the same directory tree. Remember that if your application depends
+    on compiler specific libraries, these must also be redistributed along
+    with your application. For more information, see the \l {Application
     Dependencies} section.
 
     We'll cover the plugins shortly, but the main issue with shared
@@ -705,14 +707,21 @@
 
     \section2 Qt Plugins
 
+    All Qt GUI applications require a plugin that implements the \l {Qt
+    Platform Abstraction} (QPA) layer in Qt 5. For Linux/X11, the name of the
+    platform plugin is \c {libqxcb.so}. This file must be located within a
+    specific subdirectory (by default, \c platforms) under your distribution
+    directory. Alternatively, it is possible to adjust the search path Qt
+    uses to find its plugins, as described below.
+
     Your application may also depend on one or more Qt plugins, such
     as the JPEG image format plugin or a SQL driver plugin. Be sure
-    to distribute any Qt plugins that you need with your application,
-    and note that each type of plugin should be located within a
-    specific subdirectory (such as \c imageformats or \c sqldrivers)
-    within your distribution directory, as described below.
+    to distribute any Qt plugins that you need with your application.
+    Similar to the platform plugin, each type of plugin must be located
+    within a specific subdirectory (such as \c imageformats or \c sqldrivers)
+    within your distribution directory.
 
-    \note If you are deploying an application that uses QtWebKit to display
+    \note If you are deploying an application that uses \l{Qt WebKit} to display
     HTML pages from the World Wide Web, you should include all text codec
     plugins to support as many HTML encodings possible.
 
@@ -795,7 +804,7 @@
        mode.
     \li Versions 10.1.008 to 10.1.015 for both IA-32 and Intel 64 are
        known crash with "(0): internal error: 0_47021" when compiling
-       QtXmlPatterns, QtWebKit, and Designer in release mode. Version
+       \l{Qt XML Patterns}, \l{Qt WebKit}, and \l{Qt Designer} in release mode. Version
        10.1.017 compiles these modules correctly in release mode.
     \endlist
 

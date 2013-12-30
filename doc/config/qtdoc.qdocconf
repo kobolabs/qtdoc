@@ -3,12 +3,13 @@ include($QT_INSTALL_DOCS/global/qt-module-defaults.qdocconf)
 
 project                 = QtDoc
 description             = Qt Reference Documentation
-url                     = http://qt-project.org/doc/qt-$QT_VER/qtdoc
+url                     = http://qt-project.org/doc/qt-$QT_VER
 version                 = $QT_VERSION
 
 depends += \
     activeqt \
     qmake \
+    qtandroidextras \
     qtassistant \
     qt3d \
     qtbluetooth \
@@ -24,6 +25,7 @@ depends += \
     qtgui \
     qtlocation \
     qtlinguist \
+    qtmacextras \
     qtmultimedia \
     qtmultimediawidgets \
     qtnetwork \

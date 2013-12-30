@@ -71,7 +71,7 @@
 
     \omit
     Omitted for now since the links are broken.
-    \section2 QtWebKit
+    \section2 Qt WebKit
     \list
     \li \l{QtWebKit Guide} - An introductory guide to the features of QtWebKit
     and HTML5.
@@ -109,14 +109,14 @@
     \li \l{Qt Test Tutorial}{Qt Test} - This tutorial gives a short
     introduction to how to use some of the features of Qt's unit-testing
     framework, Qt Test. It is divided into four chapters.
-    \li \l{qmake Tutorial}{qmake} - This tutorial teaches you how to use \c
+    \li \l{Getting Started}{qmake} - This tutorial teaches you how to use \c
     qmake. We recommend that you read the \l{qmake Manual}{qmake user guide}
     after completing this tutorial.
     \li \l{Qt Linguist Manual: Developers#Tutorials}{Qt Linguist} - A guided
     tour through the translations process, explaining the tools provided for
     developers, translators and release managers.
     \omit broken links
-    \image linguist-examples.png QtLinguist
+    \image linguist-examples.png Qt Linguist
     \endomit
     \endlist
 
@@ -314,7 +314,7 @@
 
     \image xml-examples.png XML
 
-    The XQuery/XPath and XML Schema engines in the QtXmlPatterns modules
+    The XQuery/XPath and XML Schema engines in the \l{Qt XML Patterns} module
     provide classes for querying XML files and custom data models.
 
     \annotatedlist xmlpattern_examples

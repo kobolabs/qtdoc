@@ -37,6 +37,8 @@ There are two ways to install Qt:
 project.org/downloads}.
 \endlist
 
+\note Qt Enterprise packages are available from the \l{Try Qt Enterprise} page.
+
 This page lists the relevant information for installing Qt by building the Qt
 sources. The installation procedure is different on each Qt platform. This page
 collects the relevant information for the \l{Supported Platforms}.
@@ -97,7 +99,6 @@ More information about enabling SSL support can be found in the
 \title Installing Qt for Windows CE
 \ingroup qtce
 \brief How to install Qt for Windows CE.
-\previouspage Installation
 \tableofcontents
 
 Qt for Windows CE has some requirements that are given in more detail
@@ -149,7 +150,6 @@ in the \l{Qt for Windows CE Requirements} document.
 
     The links below provide further information for using Qt:
     \list
-    \li \l{How to Learn Qt}
     \li \l{Qt Examples and Tutorials}
     \li \l{Deploying Qt Applications}
     \endlist
@@ -160,13 +160,6 @@ in the \l{Qt for Windows CE Requirements} document.
     \li \l{Windows CE - Working with Custom SDKs}
     \li \l{Windows CE - Using shadow builds}
     \li \l{Windows CE - Signing}
-    \endlist
-
-    Information on feature and performance tuning for embedded builds can
-    be found on the following pages:
-    \list
-    \li \l{Fine-Tuning Features in Qt}
-    \li \l{Qt Performance Tuning}
     \endlist
 
     We hope you will enjoy using Qt. Good luck!

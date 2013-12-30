@@ -26,43 +26,13 @@
 ****************************************************************************/
 
 /*!
-\page overviews-main.html
-\title Qt Overviews
-\brief Qt development topics
+    \page platform-notes-qtee.html
+    \title Qt Enterprise Embedded
 
-Qt features a wide range of different technologies. The following topics are key areas of
-functionality and can be used as a starting point for learning how to to get the most of Qt.
+    Qt Enterprise Embedded, available under a commercial license,
+    supports Qt development on embedded Linux and embedded Android
+    devices.
 
-\list
-\li \l{Development Tools}
-\li \l{User Interfaces}
-\li \l{Core Internals}
-\li \l{Data Storage}
-\li \l{Multimedia}
-\li \l{Networking and Connectivity}
-\li \l{Graphics}
-\li \l{Mobile APIs}
-\li \l{QML Applications}
-\endlist
-
-\list
-\li \l {Scripting}
-\li \l {Internationalization with Qt}
-\li \l {Integrating Web Content}
-\li \l {Testing and Debugging}
-\li \l {Add-ons}
-\li \l {Porting Guide}{Porting from Qt 4}
-\endlist
-
-\section1 Best Practices
-
-These pages give guidance on how to use Qt technologies best to create
-applications that excel in usability and software design.
-
-\annotatedlist best-practices
-
-\section1 Reference
-
-Also see \l {All Overviews and HOWTOs} for a list of overview articles on one page.
-
+    See \l http://qt.digia.com/Product/Qt-Enterprise-Embedded/ for
+    more information.
 */
